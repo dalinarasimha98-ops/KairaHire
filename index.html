@@ -242,21 +242,15 @@ section{ padding:88px 0; }
 .how-step h3{ font-size:18px; color:var(--navy); margin:0 0 8px; }
 .how-step p{ font-size:14.5px; color:var(--ink-soft); margin:0; line-height:1.55; }
 
-/* ===== Pricing ===== */
+/* ===== How we work (value cards) ===== */
 .pricing{ background:var(--cream-deep); }
-.pricing-table-wrap{ overflow-x:auto; border:1px solid var(--line); border-radius:6px; }
-.pricing-table{ width:100%; border-collapse:collapse; background:#fff; }
-.pricing-table th{
-  text-align:left; font-size:13px; text-transform:uppercase; letter-spacing:.04em;
-  color:var(--ink-soft); padding:16px 22px; background:var(--cream-deep);
-  border-bottom:1px solid var(--line);
+.value-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-bottom:40px; }
+.value-card{
+  background:#fff; border:1px solid var(--line); border-radius:6px; padding:28px 26px;
 }
-.pricing-table td{
-  padding:16px 22px; font-size:15.5px; border-bottom:1px solid var(--line); color:var(--ink);
-}
-.pricing-table tr:last-child td{ border-bottom:none; }
-.pricing-table td:nth-child(2){ font-weight:600; color:var(--navy); }
-.pricing-notes{ margin-top:28px; display:flex; flex-direction:column; gap:10px; }
+.value-card h3{ font-family:var(--serif); font-size:19px; color:var(--navy); margin:0 0 10px; }
+.value-card p{ font-size:14.5px; color:var(--ink-soft); margin:0; line-height:1.6; }
+.pricing-notes{ margin-top:8px; display:flex; flex-direction:column; gap:10px; }
 .pricing-notes p{ display:flex; align-items:center; gap:10px; font-size:14.5px; color:var(--ink-soft); margin:0; }
 .dot{ width:6px; height:6px; border-radius:50%; background:var(--sage); flex-shrink:0; }
 
@@ -313,6 +307,7 @@ section{ padding:88px 0; }
   .section-title{ font-size:28px; }
   .problem-grid{ grid-template-columns:1fr; }
   .how-grid{ grid-template-columns:1fr; }
+  .value-grid{ grid-template-columns:1fr; }
   .service-row{ grid-template-columns:1fr; gap:8px; }
   .ledger-head, .ledger-row{ grid-template-columns:1fr; gap:4px; padding:14px 16px; }
   .ledger-head{ display:none; }
@@ -346,7 +341,7 @@ noscript ~ .reveal,
     <nav class="main-nav">
       <a href="#services">Services</a>
       <a href="#how">How it works</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#pricing">How we work</a>
       <a href="#ledger">Open roles</a>
     </nav>
     <a class="btn btn-small" href="#contact">Talk to us</a>
@@ -447,8 +442,8 @@ noscript ~ .reveal,
             <h3>Permanent hiring</h3>
             <p>Full-time roles across IT and Non-IT functions — engineering, product, sales, finance, operations and HR. Candidate joins your payroll directly.</p>
             <ul class="service-meta">
-              <li>8.33%–10% of annual CTC</li>
-              <li>Leadership roles 12–15%</li>
+              <li>All experience levels</li>
+              <li>Leadership roles included</li>
             </ul>
           </div>
         </article>
@@ -459,8 +454,8 @@ noscript ~ .reveal,
             <h3>Contract hiring</h3>
             <p>Fixed-term engagements from 3 to 12+ months. The candidate sits on your payroll or your vendor's — we never touch payroll, PF or compliance.</p>
             <ul class="service-meta">
-              <li>6–10% of total contract value</li>
-              <li>Minimum fee ₹25,000</li>
+              <li>3 to 12+ month terms</li>
+              <li>Zero payroll burden on us</li>
             </ul>
           </div>
         </article>
@@ -471,8 +466,8 @@ noscript ~ .reveal,
             <h3>Executive search</h3>
             <p>Director, VP and CXO-level mandates handled with discretion — confidential outreach, structured shortlists, and reference-checked finalists.</p>
             <ul class="service-meta">
-              <li>12–15% of annual CTC</li>
               <li>Confidential process</li>
+              <li>Senior &amp; leadership focus</li>
             </ul>
           </div>
         </article>
@@ -568,31 +563,31 @@ noscript ~ .reveal,
     </div>
   </section>
 
-  <!-- ============ PRICING ============ -->
+  <!-- ============ HOW WE WORK WITH YOU ============ -->
   <section class="pricing" id="pricing">
     <div class="wrap">
-      <p class="section-eyebrow">Commercial terms</p>
-      <h2 class="section-title">One model. No surprises.</h2>
+      <p class="section-eyebrow">How we work with you</p>
+      <h2 class="section-title">No retainers. No upfront cost. Just results.</h2>
 
-      <div class="pricing-table-wrap">
-        <table class="pricing-table">
-          <thead>
-            <tr><th>Service</th><th>Fee</th><th>Minimum</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Permanent hiring</td><td>8.33%–10% of annual CTC</td><td>—</td></tr>
-            <tr><td>Leadership / executive roles</td><td>12%–15% of annual CTC</td><td>—</td></tr>
-            <tr><td>Contract hiring (3–6 mo)</td><td>6% of contract value</td><td>₹25,000</td></tr>
-            <tr><td>Contract hiring (6–12 mo)</td><td>8% of contract value</td><td>₹25,000</td></tr>
-            <tr><td>Contract hiring (12+ mo)</td><td>10% of contract value</td><td>₹25,000</td></tr>
-          </tbody>
-        </table>
+      <div class="value-grid">
+        <div class="value-card">
+          <h3>Success-fee only</h3>
+          <p>You're invoiced only after a candidate successfully joins. There's no monthly retainer and no fee for a search that doesn't close.</p>
+        </div>
+        <div class="value-card">
+          <h3>Replacement guarantee</h3>
+          <p>Every placement carries a 45-day free replacement window, so you're covered if a hire doesn't work out early on.</p>
+        </div>
+        <div class="value-card">
+          <h3>Flexible engagement</h3>
+          <p>Permanent, contract, or executive search — we tailor the commercial terms to the mandate during onboarding, in writing, before we start sourcing.</p>
+        </div>
       </div>
 
       <div class="pricing-notes">
         <p><span class="dot"></span> Payable only on successful joining — nothing upfront.</p>
         <p><span class="dot"></span> 45-day free replacement on every placement.</p>
-        <p><span class="dot"></span> GST applied at 18% per current regulation.</p>
+        <p><span class="dot"></span> Full commercial terms shared in a simple agreement before any search begins.</p>
       </div>
     </div>
   </section>
