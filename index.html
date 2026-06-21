@@ -2,692 +2,773 @@
 <html lang="en">
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YH4PGB98XV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-YH4PGB98XV');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KairaHire — Connecting Great Companies with Great Talent</title>
-<meta name="description" content="KairaHire is a recruitment consultancy for IT and Non-IT hiring. Success-fee model, no upfront cost, 45-day replacement guarantee.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-/* ===== Tokens ===== */
-:root{
-  --ink:#1c1c1a;
-  --ink-soft:#4a4944;
-  --cream:#fbf8f3;
-  --cream-deep:#f3eee3;
-  --navy:#13294b;
-  --navy-deep:#0c1c36;
-  --rust:#d97e4a;
-  --rust-deep:#bd6535;
-  --sage:#7c9082;
-  --line:#e4ddcf;
-  --line-on-navy:rgba(255,255,255,0.14);
-  --serif: 'Source Serif 4', Georgia, serif;
-  --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YH4PGB98XV');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{
-  margin:0;
-  font-family:var(--sans);
-  color:var(--ink);
-  background:var(--cream);
-  -webkit-font-smoothing:antialiased;
-  line-height:1.5;
-}
-img{max-width:100%;display:block;}
-a{color:inherit;text-decoration:none;}
-.wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+  <!-- SEO -->
+  <title>KairaHire — Recruitment Consultancy in Bengaluru | IT & Non-IT Hiring</title>
+  <meta name="description" content="KairaHire is a Bengaluru-based recruitment consultancy for IT and Non-IT hiring. Success-fee model — you pay only when your candidate joins. 45-day replacement guarantee.">
+  <meta name="keywords" content="recruitment consultancy Bengaluru, IT hiring, permanent hiring, executive search, contract staffing, no upfront fee recruitment">
+  <link rel="canonical" href="https://www.kairahire.com/">
 
-.grain{
-  position:fixed; inset:0; pointer-events:none; z-index:1;
-  opacity:0.035; mix-blend-mode:multiply;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
+  <!-- Open Graph (controls how link looks on LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.kairahire.com/">
+  <meta property="og:title" content="KairaHire — Recruitment Consultancy in Bengaluru">
+  <meta property="og:description" content="IT & Non-IT hiring on a pure success-fee model. You pay only when your candidate joins. 45-day replacement guarantee.">
+  <meta property="og:image" content="https://www.kairahire.com/og-image.png">
+  <meta property="og:site_name" content="KairaHire Solutions">
+  <meta property="og:locale" content="en_IN">
 
-:focus-visible{outline:2px solid var(--rust); outline-offset:2px;}
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KairaHire — Recruitment Consultancy in Bengaluru">
+  <meta name="twitter:description" content="IT & Non-IT hiring on a pure success-fee model. You pay only when your candidate joins.">
+  <meta name="twitter:image" content="https://www.kairahire.com/og-image.png">
 
-/* ===== Buttons ===== */
-.btn{
-  display:inline-flex; align-items:center; justify-content:center;
-  font-family:var(--sans); font-weight:600; font-size:15px;
-  padding:13px 24px; border-radius:3px;
-  border:1px solid transparent; cursor:pointer;
-  transition:transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
-}
-.btn-primary{ background:var(--rust); color:#fff; }
-.btn-primary:hover{ background:var(--rust-deep); transform:translateY(-1px); }
-.btn-ghost{ background:transparent; color:var(--ink); border-color:var(--ink); }
-.btn-ghost:hover{ background:var(--ink); color:var(--cream); }
-.btn-small{ padding:9px 18px; font-size:14px; background:var(--navy); color:#fff; }
-.btn-small:hover{ background:var(--navy-deep); }
-.btn-full{ width:100%; }
+  <!-- Favicon placeholder — replace with real favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%2313294b'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='white'>K</text></svg>">
 
-/* ===== Header ===== */
-.site-header{
-  position:sticky; top:0; z-index:50;
-  background:rgba(251,248,243,0.92);
-  backdrop-filter:blur(8px);
-  border-bottom:1px solid var(--line);
-}
-.header-inner{
-  display:flex; align-items:center; justify-content:space-between;
-  height:72px;
-}
-.brand{ display:flex; align-items:center; gap:10px; font-family:var(--serif); font-size:21px; font-weight:600; }
-.brand-mark{
-  display:inline-flex; align-items:center; justify-content:center;
-  width:32px; height:32px; border-radius:3px;
-  background:var(--navy); color:#fff; font-family:var(--serif); font-size:17px;
-}
-.brand-mark.small{ width:26px; height:26px; font-size:14px; }
-.main-nav{ display:flex; gap:32px; }
-.main-nav a{ font-size:15px; color:var(--ink-soft); transition:color .2s; }
-.main-nav a:hover{ color:var(--ink); }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-/* ===== Hero ===== */
-.hero{ padding:88px 0 64px; }
-.hero-inner{
-  display:grid; grid-template-columns:1.1fr 0.9fr; gap:64px; align-items:center;
-}
-.eyebrow{
-  font-size:13px; letter-spacing:.08em; text-transform:uppercase;
-  color:var(--rust-deep); font-weight:600; margin:0 0 18px;
-}
-.hero h1{
-  font-family:var(--serif); font-weight:600;
-  font-size:50px; line-height:1.08; letter-spacing:-0.01em;
-  margin:0 0 22px; color:var(--navy);
-}
-.hero h1 em{ font-style:italic; color:var(--rust-deep); }
-.hero-sub{
-  font-size:18px; line-height:1.6; color:var(--ink-soft);
-  max-width:480px; margin:0 0 32px;
-}
-.hero-actions{ display:flex; gap:14px; margin-bottom:48px; }
-.hero-proof{ display:flex; align-items:center; gap:20px; }
-.proof-item{ display:flex; flex-direction:column; }
-.proof-num{ font-family:var(--serif); font-size:26px; font-weight:600; color:var(--navy); }
-.proof-label{ font-size:12.5px; color:var(--ink-soft); margin-top:2px; max-width:110px; }
-.proof-divider{ width:1px; height:34px; background:var(--line); }
+  <style>
+  /* ===== Tokens ===== */
+  :root{
+    --ink:#1c1c1a;
+    --ink-soft:#4a4944;
+    --cream:#fbf8f3;
+    --cream-deep:#f3eee3;
+    --navy:#13294b;
+    --navy-deep:#0c1c36;
+    --rust:#d97e4a;
+    --rust-deep:#bd6535;
+    --sage:#7c9082;
+    --line:#e4ddcf;
+    --line-on-navy:rgba(255,255,255,0.14);
+    --serif:'Source Serif 4',Georgia,serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    --radius:6px;
+  }
 
-.hero-visual{ position:relative; }
-.docket{
-  position:relative; z-index:2;
-  background:#fff; border:1px solid var(--line);
-  border-radius:6px; padding:26px 26px 22px;
-  box-shadow:0 24px 48px -24px rgba(19,41,75,0.25);
-}
-.docket-back{
-  position:absolute; inset:14px -10px -10px 14px; z-index:1;
-  background:var(--cream-deep); border:1px solid var(--line);
-  border-radius:6px;
-}
-.docket-head{
-  display:flex; justify-content:space-between; align-items:baseline;
-  border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:16px;
-}
-.docket-tag{ font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); }
-.docket-id{ font-family:'Source Serif 4', serif; font-weight:600; color:var(--navy); font-size:15px; }
-.docket-row{ display:flex; justify-content:space-between; padding:7px 0; font-size:14.5px; }
-.docket-label{ color:var(--ink-soft); }
-.docket-value{ font-weight:600; color:var(--ink); }
-.status-live{ color:var(--rust-deep); }
-.docket-progress{
-  height:6px; background:var(--cream-deep); border-radius:3px; margin:16px 0 14px; overflow:hidden;
-}
-.docket-progress-fill{
-  height:100%; width:38%; background:var(--rust);
-  animation:fillgrow 1.6s ease-out .3s forwards;
-  transform-origin:left;
-}
-@keyframes fillgrow{ from{ width:0%; } to{ width:38%; } }
-.docket-foot{
-  display:flex; justify-content:space-between; font-size:12.5px; color:var(--ink-soft);
-  padding-top:10px; border-top:1px solid var(--line);
-}
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;font-family:var(--sans);color:var(--ink);
+    background:var(--cream);-webkit-font-smoothing:antialiased;line-height:1.5;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
 
-/* ===== Trust strip ===== */
-.trust-strip{ background:var(--navy); padding:22px 0; }
-.trust-line{
-  margin:0; text-align:center; color:#cfd9e8; font-size:15px; font-weight:500;
-}
+  .grain{
+    position:fixed;inset:0;pointer-events:none;z-index:1;
+    opacity:0.035;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
 
-/* ===== Section generic ===== */
-section{ padding:88px 0; }
-.section-eyebrow{
-  font-size:13px; letter-spacing:.08em; text-transform:uppercase;
-  color:var(--rust-deep); font-weight:600; margin:0 0 14px;
-}
-.section-eyebrow.light{ color:#e6a07a; }
-.section-title{
-  font-family:var(--serif); font-weight:600; font-size:36px;
-  line-height:1.2; color:var(--navy); margin:0 0 48px; max-width:640px;
-}
-.section-title.light{ color:#fff; }
+  :focus-visible{outline:2px solid var(--rust);outline-offset:2px;}
 
-/* ===== Problem ===== */
-.problem{ background:var(--cream-deep); }
-.problem-grid{
-  display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
-  background:var(--line); border:1px solid var(--line);
-}
-.problem-card{ background:var(--cream-deep); padding:32px 26px; }
-.problem-mark{
-  font-family:var(--serif); font-size:14px; color:var(--rust-deep); font-weight:600;
-  display:block; margin-bottom:14px;
-}
-.problem-card h3{ font-size:17px; margin:0 0 10px; color:var(--navy); }
-.problem-card p{ font-size:14.5px; color:var(--ink-soft); margin:0; line-height:1.55; }
+  /* ===== Buttons ===== */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    font-family:var(--sans);font-weight:600;font-size:15px;
+    padding:13px 24px;border-radius:3px;border:1px solid transparent;cursor:pointer;
+    transition:transform .15s ease,background .2s ease,color .2s ease,border-color .2s ease;
+  }
+  .btn-primary{background:var(--rust);color:#fff;}
+  .btn-primary:hover{background:var(--rust-deep);transform:translateY(-1px);}
+  .btn-primary:disabled{opacity:0.65;cursor:not-allowed;transform:none;}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink);}
+  .btn-ghost:hover{background:var(--ink);color:var(--cream);}
+  .btn-small{padding:9px 18px;font-size:14px;background:var(--navy);color:#fff;border-radius:3px;}
+  .btn-small:hover{background:var(--navy-deep);}
+  .btn-full{width:100%;}
 
-/* ===== Services ===== */
-.service-list{ border-top:1px solid var(--line); }
-.service-row{
-  display:grid; grid-template-columns:64px 1fr; gap:28px;
-  padding:36px 0; border-bottom:1px solid var(--line);
-}
-.service-num{
-  font-family:var(--serif); font-size:30px; font-weight:600; color:var(--rust-deep);
-}
-.service-body h3{ font-family:var(--serif); font-size:24px; color:var(--navy); margin:0 0 10px; }
-.service-body p{ font-size:16px; color:var(--ink-soft); max-width:620px; margin:0 0 16px; line-height:1.6; }
-.service-meta{ display:flex; gap:24px; list-style:none; padding:0; margin:0; }
-.service-meta li{
-  font-size:13.5px; font-weight:600; color:var(--navy);
-  background:var(--cream-deep); padding:6px 12px; border-radius:3px;
-}
+  /* ===== Header ===== */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(251,248,243,0.95);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+    transition:box-shadow .2s;
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:21px;font-weight:600;}
+  .brand-mark{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:32px;height:32px;border-radius:3px;
+    background:var(--navy);color:#fff;font-family:var(--serif);font-size:17px;
+    flex-shrink:0;
+  }
+  .brand-mark.small{width:26px;height:26px;font-size:14px;}
+  .main-nav{display:flex;gap:32px;}
+  .main-nav a{font-size:15px;color:var(--ink-soft);transition:color .2s;}
+  .main-nav a:hover{color:var(--ink);}
 
-/* ===== Ledger ===== */
-.ledger{ background:var(--navy); color:#fff; }
-.ledger-sub{ color:#aab8cc; font-size:16px; margin:-30px 0 40px; max-width:520px; }
-.ledger-table{
-  background:var(--navy-deep); border:1px solid var(--line-on-navy); border-radius:6px;
-  overflow:hidden;
-}
-.ledger-head, .ledger-row{
-  display:grid; grid-template-columns:100px 1.6fr 1.1fr 70px 150px;
-  align-items:center; padding:14px 22px; gap:10px;
-}
-.ledger-head{
-  font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:#8294ad;
-  border-bottom:1px solid var(--line-on-navy);
-}
-.ledger-row{ font-size:14.5px; border-bottom:1px solid var(--line-on-navy); }
-.ledger-row:last-child{ border-bottom:none; }
-.mono{ font-family:'Source Serif 4', serif; color:#cfd9e8; font-size:13.5px; }
-.pill{
-  display:inline-flex; align-items:center; justify-content:center;
-  font-size:12.5px; font-weight:600; padding:5px 12px; border-radius:20px;
-  width:fit-content;
-}
-.pill-shortlisted{ background:rgba(124,144,130,0.25); color:#a9c2ae; }
-.pill-interview{ background:rgba(217,126,74,0.22); color:#e6a07a; }
-.pill-sourcing{ background:rgba(207,217,232,0.14); color:#cfd9e8; }
-.pill-new{ background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.25); }
-.ledger-foot{ margin-top:28px; color:#aab8cc; font-size:15px; }
-.ledger-foot a{ color:#e6a07a; font-weight:600; border-bottom:1px solid rgba(230,160,122,0.4); }
+  /* Mobile nav toggle */
+  .nav-toggle{
+    display:none;background:none;border:none;cursor:pointer;padding:8px;
+    color:var(--ink);flex-direction:column;gap:5px;
+  }
+  .nav-toggle span{display:block;width:22px;height:2px;background:currentColor;border-radius:2px;transition:.2s;}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
-/* ===== How it works ===== */
-.how-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:36px; }
-.how-index{
-  display:inline-flex; align-items:center; justify-content:center;
-  width:40px; height:40px; border-radius:50%;
-  border:1.5px solid var(--rust); color:var(--rust-deep);
-  font-family:var(--serif); font-weight:600; font-size:16px;
-  margin-bottom:18px;
-}
-.how-step h3{ font-size:18px; color:var(--navy); margin:0 0 8px; }
-.how-step p{ font-size:14.5px; color:var(--ink-soft); margin:0; line-height:1.55; }
+  .mobile-nav{
+    display:none;background:var(--cream);border-bottom:1px solid var(--line);
+    padding:16px 32px 20px;
+  }
+  .mobile-nav.open{display:block;}
+  .mobile-nav a{
+    display:block;padding:10px 0;font-size:16px;color:var(--ink-soft);
+    border-bottom:1px solid var(--line);
+  }
+  .mobile-nav a:last-child{border-bottom:none;}
+  .mobile-nav .btn{margin-top:14px;width:100%;}
 
-/* ===== How we work ===== */
-.pricing{ background:var(--cream-deep); }
-.value-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-bottom:40px; }
-.value-card{
-  background:#fff; border:1px solid var(--line); border-radius:6px; padding:28px 26px;
-}
-.value-card h3{ font-family:var(--serif); font-size:19px; color:var(--navy); margin:0 0 10px; }
-.value-card p{ font-size:14.5px; color:var(--ink-soft); margin:0; line-height:1.6; }
-.pricing-notes{ margin-top:8px; display:flex; flex-direction:column; gap:10px; }
-.pricing-notes p{ display:flex; align-items:center; gap:10px; font-size:14.5px; color:var(--ink-soft); margin:0; }
-.dot{ width:6px; height:6px; border-radius:50%; background:var(--sage); flex-shrink:0; }
+  /* ===== Hero ===== */
+  .hero{padding:88px 0 64px;}
+  .hero-inner{display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:center;}
+  .eyebrow{
+    font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--rust-deep);font-weight:600;margin:0 0 18px;
+  }
+  .hero h1{
+    font-family:var(--serif);font-weight:600;
+    font-size:50px;line-height:1.08;letter-spacing:-0.01em;
+    margin:0 0 22px;color:var(--navy);
+  }
+  .hero h1 em{font-style:italic;color:var(--rust-deep);}
+  .hero-sub{font-size:18px;line-height:1.6;color:var(--ink-soft);max-width:480px;margin:0 0 32px;}
+  .hero-actions{display:flex;gap:14px;margin-bottom:48px;flex-wrap:wrap;}
+  .hero-proof{display:flex;align-items:center;gap:20px;}
+  .proof-item{display:flex;flex-direction:column;}
+  .proof-num{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--navy);}
+  .proof-label{font-size:12.5px;color:var(--ink-soft);margin-top:2px;max-width:110px;}
+  .proof-divider{width:1px;height:34px;background:var(--line);}
 
-/* ===== Industries ===== */
-.industry-tags{ display:flex; flex-wrap:wrap; gap:12px; }
-.industry-tags span{
-  font-size:14.5px; font-weight:600; color:var(--navy);
-  border:1px solid var(--line); padding:10px 18px; border-radius:24px;
-}
+  /* Docket card */
+  .hero-visual{position:relative;}
+  .docket{
+    position:relative;z-index:2;background:#fff;border:1px solid var(--line);
+    border-radius:var(--radius);padding:26px 26px 22px;
+    box-shadow:0 24px 48px -24px rgba(19,41,75,0.25);
+  }
+  .docket-back{
+    position:absolute;inset:14px -10px -10px 14px;z-index:1;
+    background:var(--cream-deep);border:1px solid var(--line);border-radius:var(--radius);
+  }
+  .docket-head{
+    display:flex;justify-content:space-between;align-items:baseline;
+    border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px;
+  }
+  .docket-tag{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);}
+  .docket-id{font-family:var(--serif);font-weight:600;color:var(--navy);font-size:15px;}
+  .docket-row{display:flex;justify-content:space-between;padding:7px 0;font-size:14.5px;}
+  .docket-label{color:var(--ink-soft);}
+  .docket-value{font-weight:600;color:var(--ink);}
+  .status-live{color:var(--rust-deep);}
+  .docket-progress{height:6px;background:var(--cream-deep);border-radius:3px;margin:16px 0 14px;overflow:hidden;}
+  .docket-progress-fill{
+    height:100%;width:0%;background:var(--rust);
+    animation:fillgrow 1.6s ease-out .3s forwards;transform-origin:left;
+  }
+  @keyframes fillgrow{from{width:0%;}to{width:38%;}}
+  .docket-foot{
+    display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink-soft);
+    padding-top:10px;border-top:1px solid var(--line);
+  }
 
-/* ===== CTA / Contact ===== */
-.cta{ background:var(--navy-deep); }
-.cta-inner{ display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
-.cta-sub{ color:#aab8cc; font-size:16px; max-width:420px; }
-.cta-form{
-  background:#fff; border-radius:8px; padding:32px;
-}
-.form-row{ margin-bottom:18px; display:flex; flex-direction:column; gap:7px; }
-.form-row label{ font-size:13.5px; font-weight:600; color:var(--navy); }
-.form-row input{
-  padding:12px 14px; border:1px solid var(--line); border-radius:4px;
-  font-size:15px; font-family:var(--sans); background:var(--cream);
-  transition: border-color .2s;
-}
-.form-row input:focus{ outline:none; border-color:var(--rust); background:#fff; }
-.form-note{ font-size:13px; color:var(--ink-soft); text-align:center; margin:14px 0 0; }
+  /* ===== Trust strip ===== */
+  .trust-strip{background:var(--navy);padding:22px 0;}
+  .trust-line{margin:0;text-align:center;color:#cfd9e8;font-size:15px;font-weight:500;}
 
-/* Form states */
-.btn-primary:disabled{
-  opacity:0.65; cursor:not-allowed; transform:none;
-}
-.form-success{
-  text-align:center; padding:32px 16px;
-}
-.form-success-icon{
-  width:52px; height:52px; border-radius:50%;
-  background:rgba(124,144,130,0.15); border:2px solid var(--sage);
-  display:flex; align-items:center; justify-content:center;
-  margin:0 auto 18px; font-size:22px;
-}
-.form-success h3{
-  font-family:var(--serif); font-size:22px; color:var(--navy); margin:0 0 10px;
-}
-.form-success p{ font-size:14.5px; color:var(--ink-soft); margin:0; line-height:1.6; }
+  /* ===== Sections ===== */
+  section{padding:88px 0;}
+  .section-eyebrow{
+    font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--rust-deep);font-weight:600;margin:0 0 14px;
+  }
+  .section-eyebrow.light{color:#e6a07a;}
+  .section-title{
+    font-family:var(--serif);font-weight:600;font-size:36px;
+    line-height:1.2;color:var(--navy);margin:0 0 48px;max-width:640px;
+  }
+  .section-title.light{color:#fff;}
 
-/* ===== Footer ===== */
-.site-footer{ background:var(--navy-deep); padding:48px 0 36px; border-top:1px solid var(--line-on-navy); }
-.footer-inner{ text-align:center; }
-.footer-brand{
-  display:flex; align-items:center; justify-content:center; gap:10px;
-  font-family:var(--serif); font-size:18px; font-weight:600; color:#fff; margin-bottom:10px;
-}
-.footer-tag{ color:#aab8cc; font-size:14.5px; margin:0 0 18px; }
-.footer-links{ color:#cfd9e8; font-size:14px; margin-bottom:20px; }
-.footer-divider{ margin:0 10px; color:#5d6c82; }
-.footer-copy{ color:#5d6c82; font-size:12.5px; margin:0; }
+  /* ===== Problem ===== */
+  .problem{background:var(--cream-deep);}
+  .problem-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+    background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  }
+  .problem-card{background:var(--cream-deep);padding:32px 26px;}
+  .problem-mark{font-family:var(--serif);font-size:14px;color:var(--rust-deep);font-weight:600;display:block;margin-bottom:14px;}
+  .problem-card h3{font-size:17px;margin:0 0 10px;color:var(--navy);}
+  .problem-card p{font-size:14.5px;color:var(--ink-soft);margin:0;line-height:1.55;}
 
-/* ===== Responsive ===== */
-@media (max-width: 980px){
-  .hero-inner{ grid-template-columns:1fr; }
-  .hero-visual{ order:-1; max-width:420px; margin:0 auto; }
-  .problem-grid{ grid-template-columns:repeat(2,1fr); }
-  .how-grid{ grid-template-columns:repeat(2,1fr); }
-  .cta-inner{ grid-template-columns:1fr; }
-  .main-nav{ display:none; }
-}
-@media (max-width: 620px){
-  .wrap{ padding:0 20px; }
-  .hero{ padding:56px 0 48px; }
-  .hero h1{ font-size:36px; }
-  .hero-proof{ flex-wrap:wrap; gap:16px; }
-  .proof-divider{ display:none; }
-  .section-title{ font-size:28px; }
-  .problem-grid{ grid-template-columns:1fr; }
-  .how-grid{ grid-template-columns:1fr; }
-  .value-grid{ grid-template-columns:1fr; }
-  .service-row{ grid-template-columns:1fr; gap:8px; }
-  .ledger-head, .ledger-row{ grid-template-columns:1fr; gap:4px; padding:14px 16px; }
-  .ledger-head{ display:none; }
-  .ledger-row{ padding:16px; }
-  .mono{ font-size:12px; opacity:.7; }
-}
+  /* ===== Services ===== */
+  .service-list{border-top:1px solid var(--line);}
+  .service-row{
+    display:grid;grid-template-columns:64px 1fr;gap:28px;
+    padding:36px 0;border-bottom:1px solid var(--line);
+  }
+  .service-num{font-family:var(--serif);font-size:30px;font-weight:600;color:var(--rust-deep);}
+  .service-body h3{font-family:var(--serif);font-size:24px;color:var(--navy);margin:0 0 10px;}
+  .service-body p{font-size:16px;color:var(--ink-soft);max-width:620px;margin:0 0 16px;line-height:1.6;}
+  .service-meta{display:flex;gap:24px;list-style:none;padding:0;margin:0;flex-wrap:wrap;}
+  .service-meta li{
+    font-size:13.5px;font-weight:600;color:var(--navy);
+    background:var(--cream-deep);padding:6px 12px;border-radius:3px;
+  }
 
-@media (prefers-reduced-motion: reduce){
-  *{ animation-duration:0.001ms !important; transition-duration:0.001ms !important; }
-}
+  /* ===== Ledger ===== */
+  .ledger{background:var(--navy);color:#fff;}
+  .ledger-sub{color:#aab8cc;font-size:16px;margin:-30px 0 40px;max-width:520px;}
+  .ledger-table{
+    background:var(--navy-deep);border:1px solid var(--line-on-navy);
+    border-radius:var(--radius);overflow:hidden;
+  }
+  .ledger-head,.ledger-row{
+    display:grid;grid-template-columns:100px 1.6fr 1.1fr 70px 150px;
+    align-items:center;padding:14px 22px;gap:10px;
+  }
+  .ledger-head{
+    font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#8294ad;
+    border-bottom:1px solid var(--line-on-navy);
+  }
+  .ledger-row{font-size:14.5px;border-bottom:1px solid var(--line-on-navy);}
+  .ledger-row:last-child{border-bottom:none;}
+  .ledger-row:hover{background:rgba(255,255,255,0.03);}
+  .mono{font-family:var(--serif);color:#cfd9e8;font-size:13.5px;}
+  .pill{
+    display:inline-flex;align-items:center;justify-content:center;
+    font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:20px;width:fit-content;
+  }
+  .pill-shortlisted{background:rgba(124,144,130,0.25);color:#a9c2ae;}
+  .pill-interview{background:rgba(217,126,74,0.22);color:#e6a07a;}
+  .pill-sourcing{background:rgba(207,217,232,0.14);color:#cfd9e8;}
+  .pill-new{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.25);}
+  .ledger-foot{margin-top:28px;color:#aab8cc;font-size:15px;}
+  .ledger-foot a{color:#e6a07a;font-weight:600;border-bottom:1px solid rgba(230,160,122,0.4);}
 
-.reveal{ opacity:0; transform:translateY(10px); transition:opacity .5s ease, transform .5s ease; }
-.reveal.reveal-in{ opacity:1; transform:translateY(0); }
-</style>
+  /* ===== How it works ===== */
+  .how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:36px;}
+  .how-index{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:40px;height:40px;border-radius:50%;
+    border:1.5px solid var(--rust);color:var(--rust-deep);
+    font-family:var(--serif);font-weight:600;font-size:16px;margin-bottom:18px;
+  }
+  .how-step h3{font-size:18px;color:var(--navy);margin:0 0 8px;}
+  .how-step p{font-size:14.5px;color:var(--ink-soft);margin:0;line-height:1.55;}
+
+  /* ===== How we work ===== */
+  .pricing{background:var(--cream-deep);}
+  .value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:40px;}
+  .value-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;
+    transition:box-shadow .2s,transform .2s;
+  }
+  .value-card:hover{box-shadow:0 8px 24px -8px rgba(19,41,75,0.12);transform:translateY(-2px);}
+  .value-card h3{font-family:var(--serif);font-size:19px;color:var(--navy);margin:0 0 10px;}
+  .value-card p{font-size:14.5px;color:var(--ink-soft);margin:0;line-height:1.6;}
+  .pricing-notes{margin-top:8px;display:flex;flex-direction:column;gap:10px;}
+  .pricing-notes p{display:flex;align-items:center;gap:10px;font-size:14.5px;color:var(--ink-soft);margin:0;}
+  .dot{width:6px;height:6px;border-radius:50%;background:var(--sage);flex-shrink:0;}
+
+  /* ===== Industries ===== */
+  .industry-tags{display:flex;flex-wrap:wrap;gap:12px;}
+  .industry-tags span{
+    font-size:14.5px;font-weight:600;color:var(--navy);
+    border:1px solid var(--line);padding:10px 18px;border-radius:24px;
+    transition:background .15s,border-color .15s;
+  }
+  .industry-tags span:hover{background:var(--cream-deep);border-color:var(--rust-deep);}
+
+  /* ===== CTA / Contact ===== */
+  .cta{background:var(--navy-deep);}
+  .cta-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+  .cta-sub{color:#aab8cc;font-size:16px;max-width:420px;line-height:1.6;}
+  .cta-trust{margin-top:32px;display:flex;flex-direction:column;gap:10px;}
+  .cta-trust-item{display:flex;align-items:center;gap:10px;color:#aab8cc;font-size:14px;}
+  .cta-trust-icon{
+    width:22px;height:22px;border-radius:50%;background:rgba(124,144,130,0.25);
+    display:flex;align-items:center;justify-content:center;
+    color:#a9c2ae;font-size:11px;flex-shrink:0;
+  }
+
+  .cta-form{background:#fff;border-radius:8px;padding:32px;}
+  .form-row{margin-bottom:18px;display:flex;flex-direction:column;gap:7px;}
+  .form-row label{font-size:13.5px;font-weight:600;color:var(--navy);}
+  .form-row input,.form-row select,.form-row textarea{
+    padding:12px 14px;border:1px solid var(--line);border-radius:4px;
+    font-size:15px;font-family:var(--sans);background:var(--cream);
+    transition:border-color .2s,background .2s;color:var(--ink);
+    -webkit-appearance:none;appearance:none;
+  }
+  .form-row input:focus,.form-row select:focus,.form-row textarea:focus{
+    outline:none;border-color:var(--rust);background:#fff;
+  }
+  .form-row textarea{resize:vertical;min-height:80px;line-height:1.5;}
+  .form-row select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234a4944' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;}
+  .form-note{font-size:13px;color:var(--ink-soft);text-align:center;margin:14px 0 0;}
+
+  .form-success{text-align:center;padding:32px 16px;}
+  .form-success-icon{
+    width:52px;height:52px;border-radius:50%;
+    background:rgba(124,144,130,0.15);border:2px solid var(--sage);
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 18px;font-size:22px;
+  }
+  .form-success h3{font-family:var(--serif);font-size:22px;color:var(--navy);margin:0 0 10px;}
+  .form-success p{font-size:14.5px;color:var(--ink-soft);margin:0;line-height:1.6;}
+
+  /* ===== Footer ===== */
+  .site-footer{background:var(--navy-deep);padding:56px 0 36px;border-top:1px solid var(--line-on-navy);}
+  .footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+  .footer-col-brand .footer-brand{
+    display:flex;align-items:center;gap:10px;
+    font-family:var(--serif);font-size:18px;font-weight:600;color:#fff;margin-bottom:10px;
+  }
+  .footer-col-brand p{color:#aab8cc;font-size:14px;margin:0;line-height:1.6;}
+  .footer-col h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#8294ad;margin:0 0 14px;font-weight:600;}
+  .footer-col a{display:block;color:#cfd9e8;font-size:14px;margin-bottom:10px;transition:color .2s;}
+  .footer-col a:hover{color:#fff;}
+  .footer-bottom{
+    display:flex;align-items:center;justify-content:space-between;
+    padding-top:28px;border-top:1px solid var(--line-on-navy);
+  }
+  .footer-copy{color:#5d6c82;font-size:12.5px;margin:0;}
+  .footer-legal{display:flex;gap:20px;}
+  .footer-legal a{color:#5d6c82;font-size:12.5px;transition:color .2s;}
+  .footer-legal a:hover{color:#aab8cc;}
+
+  /* ===== Responsive ===== */
+  @media(max-width:980px){
+    .hero-inner{grid-template-columns:1fr;}
+    .hero-visual{order:-1;max-width:420px;margin:0 auto;}
+    .problem-grid{grid-template-columns:repeat(2,1fr);}
+    .how-grid{grid-template-columns:repeat(2,1fr);}
+    .cta-inner{grid-template-columns:1fr;}
+    .main-nav{display:none;}
+    .nav-toggle{display:flex;}
+    .value-grid{grid-template-columns:repeat(2,1fr);}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .footer-col-brand{grid-column:1/-1;}
+  }
+  @media(max-width:620px){
+    .wrap{padding:0 20px;}
+    .hero{padding:56px 0 48px;}
+    .hero h1{font-size:34px;}
+    .hero-proof{flex-wrap:wrap;gap:16px;}
+    .proof-divider{display:none;}
+    .section-title{font-size:28px;}
+    .problem-grid{grid-template-columns:1fr;}
+    .how-grid{grid-template-columns:1fr;}
+    .value-grid{grid-template-columns:1fr;}
+    .service-row{grid-template-columns:1fr;gap:8px;}
+    .ledger-head,.ledger-row{grid-template-columns:1fr;gap:4px;padding:14px 16px;}
+    .ledger-head{display:none;}
+    .ledger-row{padding:16px;}
+    .mono{font-size:12px;opacity:.7;}
+    .footer-grid{grid-template-columns:1fr;}
+    .footer-bottom{flex-direction:column;gap:12px;text-align:center;}
+    .mobile-nav{padding:16px 20px 20px;}
+    .cta-inner{gap:40px;}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:0.001ms !important;transition-duration:0.001ms !important;}
+  }
+
+  .reveal{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease;}
+  .reveal.reveal-in{opacity:1;transform:translateY(0);}
+  </style>
 </head>
 <body>
 
 <div class="grain"></div>
 
+<!-- ===== HEADER ===== -->
 <header class="site-header" id="top">
   <div class="wrap header-inner">
-    <a class="brand" href="#top">
-      <span class="brand-mark">K</span>
-      <span class="brand-word">KairaHire</span>
+    <a class="brand" href="#top" aria-label="KairaHire home">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span>KairaHire</span>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Main navigation">
       <a href="#services">Services</a>
       <a href="#how">How it works</a>
       <a href="#pricing">How we work</a>
       <a href="#ledger">Open roles</a>
     </nav>
     <a class="btn btn-small" href="#contact">Talk to us</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#how" class="mobile-nav-link">How it works</a>
+    <a href="#pricing" class="mobile-nav-link">How we work</a>
+    <a href="#ledger" class="mobile-nav-link">Open roles</a>
+    <a href="#contact" class="btn btn-primary">Talk to us</a>
+  </nav>
 </header>
 
 <main>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow">Recruitment &amp; staffing consultancy — Bengaluru</p>
-        <h1>Hiring is slow.<br>We're built to make it<br><em>fast and certain.</em></h1>
-        <p class="hero-sub">KairaHire places IT and Non-IT talent for growing companies — on a pure success-fee model. You don't pay a rupee until your hire walks through the door.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Share a requirement</a>
-          <a href="#how" class="btn btn-ghost">See how it works</a>
-        </div>
-        <div class="hero-proof">
-          <div class="proof-item"><span class="proof-num">0%</span><span class="proof-label">upfront fee</span></div>
-          <div class="proof-divider"></div>
-          <div class="proof-item"><span class="proof-num">45</span><span class="proof-label">day replacement guarantee</span></div>
-          <div class="proof-divider"></div>
-          <div class="proof-item"><span class="proof-num">48–72h</span><span class="proof-label">to first shortlist</span></div>
-        </div>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Recruitment &amp; staffing consultancy — Bengaluru</p>
+      <h1>Hiring is slow.<br>We're built to make it<br><em>fast and certain.</em></h1>
+      <p class="hero-sub">KairaHire places IT and Non-IT talent for growing companies — on a pure success-fee model. You don't pay a rupee until your hire walks through the door.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Share a requirement</a>
+        <a href="#how" class="btn btn-ghost">See how it works</a>
       </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div class="docket">
-          <div class="docket-head">
-            <span class="docket-tag">Requisition</span>
-            <span class="docket-id">KH–0114</span>
-          </div>
-          <div class="docket-row"><span class="docket-label">Role</span><span class="docket-value">Senior Backend Engineer</span></div>
-          <div class="docket-row"><span class="docket-label">Type</span><span class="docket-value">Permanent · 12–16 LPA</span></div>
-          <div class="docket-row"><span class="docket-label">Status</span><span class="docket-value status-live">Sourcing — Day 2</span></div>
-          <div class="docket-progress">
-            <div class="docket-progress-fill"></div>
-          </div>
-          <div class="docket-foot">
-            <span>3 candidates shortlisted</span>
-            <span>Updated just now</span>
-          </div>
-        </div>
-        <div class="docket docket-back" aria-hidden="true"></div>
+      <div class="hero-proof">
+        <div class="proof-item"><span class="proof-num">0%</span><span class="proof-label">upfront fee</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><span class="proof-num">45</span><span class="proof-label">day replacement guarantee</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><span class="proof-num">48–72h</span><span class="proof-label">to first shortlist</span></div>
       </div>
     </div>
-  </section>
 
-  <!-- ============ TRUST STRIP ============ -->
-  <section class="trust-strip">
-    <div class="wrap trust-inner">
-      <p class="trust-line">Built for founders, HR leads and hiring managers who are tired of agencies that disappear after the invoice.</p>
-    </div>
-  </section>
-
-  <!-- ============ PROBLEM ============ -->
-  <section class="problem" id="problem">
-    <div class="wrap">
-      <p class="section-eyebrow">The cost of slow hiring</p>
-      <h2 class="section-title">Every open role is a quiet tax on your team.</h2>
-      <div class="problem-grid">
-        <div class="problem-card">
-          <span class="problem-mark">01</span>
-          <h3>Roles sit open for weeks</h3>
-          <p>Projects stall, deadlines slip, and the team already in place absorbs the gap.</p>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="docket">
+        <div class="docket-head">
+          <span class="docket-tag">Requisition</span>
+          <span class="docket-id">KH–0114</span>
         </div>
-        <div class="problem-card">
-          <span class="problem-mark">02</span>
-          <h3>Inboxes fill with noise</h3>
-          <p>Generic job-board sourcing means HR spends hours filtering profiles that were never a fit.</p>
-        </div>
-        <div class="problem-card">
-          <span class="problem-mark">03</span>
-          <h3>Wrong hires cost more than salary</h3>
-          <p>A bad fit costs 1–3x annual CTC once you count training, ramp time and re-hiring.</p>
-        </div>
-        <div class="problem-card">
-          <span class="problem-mark">04</span>
-          <h3>No one stands behind the hire</h3>
-          <p>Most consultancies vanish after the placement fee clears. We don't.</p>
+        <div class="docket-row"><span class="docket-label">Role</span><span class="docket-value">Senior Backend Engineer</span></div>
+        <div class="docket-row"><span class="docket-label">Type</span><span class="docket-value">Permanent · 12–16 LPA</span></div>
+        <div class="docket-row"><span class="docket-label">Status</span><span class="docket-value status-live">Sourcing — Day 2</span></div>
+        <div class="docket-progress"><div class="docket-progress-fill"></div></div>
+        <div class="docket-foot">
+          <span>3 candidates shortlisted</span>
+          <span>Updated just now</span>
         </div>
       </div>
+      <div class="docket-back" aria-hidden="true"></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============ SERVICES ============ -->
-  <section class="services" id="services">
-    <div class="wrap">
-      <p class="section-eyebrow">What we do</p>
-      <h2 class="section-title">Three ways we fill a seat.</h2>
+<!-- ===== TRUST STRIP ===== -->
+<div class="trust-strip">
+  <div class="wrap">
+    <p class="trust-line">Built for founders, HR leads and hiring managers who are tired of agencies that disappear after the invoice.</p>
+  </div>
+</div>
 
-      <div class="service-list">
-        <article class="service-row">
-          <div class="service-num">I</div>
-          <div class="service-body">
-            <h3>Permanent hiring</h3>
-            <p>Full-time roles across IT and Non-IT functions — engineering, product, sales, finance, operations and HR. Candidate joins your payroll directly.</p>
-            <ul class="service-meta">
-              <li>All experience levels</li>
-              <li>Leadership roles included</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="service-row">
-          <div class="service-num">II</div>
-          <div class="service-body">
-            <h3>Contract hiring</h3>
-            <p>Fixed-term engagements from 3 to 12+ months. The candidate sits on your payroll or your vendor's — we never touch payroll, PF or compliance.</p>
-            <ul class="service-meta">
-              <li>3 to 12+ month terms</li>
-              <li>Zero payroll burden on us</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="service-row">
-          <div class="service-num">III</div>
-          <div class="service-body">
-            <h3>Executive search</h3>
-            <p>Director, VP and CXO-level mandates handled with discretion — confidential outreach, structured shortlists, and reference-checked finalists.</p>
-            <ul class="service-meta">
-              <li>Confidential process</li>
-              <li>Senior &amp; leadership focus</li>
-            </ul>
-          </div>
-        </article>
+<!-- ===== PROBLEM ===== -->
+<section class="problem" id="problem">
+  <div class="wrap">
+    <p class="section-eyebrow">The cost of slow hiring</p>
+    <h2 class="section-title">Every open role is a quiet tax on your team.</h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <span class="problem-mark">01</span>
+        <h3>Roles sit open for weeks</h3>
+        <p>Projects stall, deadlines slip, and the team already in place absorbs the gap.</p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-mark">02</span>
+        <h3>Inboxes fill with noise</h3>
+        <p>Generic job-board sourcing means HR spends hours filtering profiles that were never a fit.</p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-mark">03</span>
+        <h3>Wrong hires cost more than salary</h3>
+        <p>A bad fit costs 1–3x annual CTC once you count training, ramp time and re-hiring.</p>
+      </div>
+      <div class="problem-card">
+        <span class="problem-mark">04</span>
+        <h3>No one stands behind the hire</h3>
+        <p>Most consultancies vanish after the placement fee clears. We don't.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============ LEDGER ============ -->
-  <section class="ledger" id="ledger">
-    <div class="wrap">
-      <p class="section-eyebrow light">Live on our desk</p>
-      <h2 class="section-title light">What sourcing looks like this week.</h2>
-      <p class="ledger-sub">A running log, not a marketing graphic — this is genuinely how we track active mandates for clients.</p>
-
-      <div class="ledger-table" role="table" aria-label="Sample hiring requisitions in progress">
-        <div class="ledger-head" role="row">
-          <span role="columnheader">Req. ID</span>
-          <span role="columnheader">Role</span>
-          <span role="columnheader">Type</span>
-          <span role="columnheader">Day</span>
-          <span role="columnheader">Status</span>
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="section-eyebrow">What we do</p>
+    <h2 class="section-title">Three ways we fill a seat.</h2>
+    <div class="service-list">
+      <article class="service-row">
+        <div class="service-num">I</div>
+        <div class="service-body">
+          <h3>Permanent hiring</h3>
+          <p>Full-time roles across IT and Non-IT functions — engineering, product, sales, finance, operations and HR. Candidate joins your payroll directly.</p>
+          <ul class="service-meta"><li>All experience levels</li><li>Leadership roles included</li></ul>
         </div>
-        <div class="ledger-row" role="row">
-          <span class="mono" role="cell">KH–0108</span>
-          <span role="cell">QA Automation Lead</span>
-          <span role="cell">Permanent</span>
-          <span role="cell">Day 6</span>
-          <span class="pill pill-shortlisted" role="cell">Shortlisted</span>
+      </article>
+      <article class="service-row">
+        <div class="service-num">II</div>
+        <div class="service-body">
+          <h3>Contract hiring</h3>
+          <p>Fixed-term engagements from 3 to 12+ months. The candidate sits on your payroll or your vendor's — we never touch payroll, PF or compliance.</p>
+          <ul class="service-meta"><li>3 to 12+ month terms</li><li>Zero payroll burden on us</li></ul>
         </div>
-        <div class="ledger-row" role="row">
-          <span class="mono" role="cell">KH–0111</span>
-          <span role="cell">DevOps Engineer</span>
-          <span role="cell">Contract · 12mo</span>
-          <span role="cell">Day 3</span>
-          <span class="pill pill-interview" role="cell">Interviewing</span>
+      </article>
+      <article class="service-row">
+        <div class="service-num">III</div>
+        <div class="service-body">
+          <h3>Executive search</h3>
+          <p>Director, VP and CXO-level mandates handled with discretion — confidential outreach, structured shortlists, and reference-checked finalists.</p>
+          <ul class="service-meta"><li>Confidential process</li><li>Senior &amp; leadership focus</li></ul>
         </div>
-        <div class="ledger-row" role="row">
-          <span class="mono" role="cell">KH–0114</span>
-          <span role="cell">Sr. Backend Engineer</span>
-          <span role="cell">Permanent</span>
-          <span role="cell">Day 2</span>
-          <span class="pill pill-sourcing" role="cell">Sourcing</span>
-        </div>
-        <div class="ledger-row" role="row">
-          <span class="mono" role="cell">KH–0116</span>
-          <span role="cell">Regional Sales Manager</span>
-          <span role="cell">Permanent</span>
-          <span role="cell">Day 1</span>
-          <span class="pill pill-sourcing" role="cell">Sourcing</span>
-        </div>
-        <div class="ledger-row" role="row">
-          <span class="mono" role="cell">KH–0117</span>
-          <span role="cell">VP Engineering</span>
-          <span role="cell">Executive search</span>
-          <span role="cell">Day 1</span>
-          <span class="pill pill-new" role="cell">New mandate</span>
-        </div>
-      </div>
-
-      <p class="ledger-foot">Your requirement could be the next row. <a href="#contact">Send it over →</a></p>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============ HOW IT WORKS ============ -->
-  <section class="how" id="how">
-    <div class="wrap">
-      <p class="section-eyebrow">The process</p>
-      <h2 class="section-title">From a job description to a joining date.</h2>
-
-      <div class="how-grid">
-        <div class="how-step">
-          <span class="how-index">1</span>
-          <h3>Tell us the role</h3>
-          <p>A short requirement form — skills, budget, timeline. Five minutes, no back-and-forth.</p>
-        </div>
-        <div class="how-step">
-          <span class="how-index">2</span>
-          <h3>We source &amp; screen</h3>
-          <p>Manual screening against your brief — not a keyword match dumped from a job board.</p>
-        </div>
-        <div class="how-step">
-          <span class="how-index">3</span>
-          <h3>You interview</h3>
-          <p>We coordinate every round, chase feedback, and keep candidates warm between stages.</p>
-        </div>
-        <div class="how-step">
-          <span class="how-index">4</span>
-          <h3>They join, you pay</h3>
-          <p>One invoice, raised the day they join. 45-day guarantee runs from that date.</p>
-        </div>
+<!-- ===== LEDGER ===== -->
+<section class="ledger" id="ledger">
+  <div class="wrap">
+    <p class="section-eyebrow light">Live on our desk</p>
+    <h2 class="section-title light">What sourcing looks like this week.</h2>
+    <p class="ledger-sub">A running log, not a marketing graphic — this is genuinely how we track active mandates for clients.</p>
+    <div class="ledger-table" role="table" aria-label="Active hiring requisitions">
+      <div class="ledger-head" role="row">
+        <span role="columnheader">Req. ID</span>
+        <span role="columnheader">Role</span>
+        <span role="columnheader">Type</span>
+        <span role="columnheader">Day</span>
+        <span role="columnheader">Status</span>
+      </div>
+      <div class="ledger-row" role="row">
+        <span class="mono" role="cell">KH–0108</span><span role="cell">QA Automation Lead</span>
+        <span role="cell">Permanent</span><span role="cell">Day 6</span>
+        <span class="pill pill-shortlisted" role="cell">Shortlisted</span>
+      </div>
+      <div class="ledger-row" role="row">
+        <span class="mono" role="cell">KH–0111</span><span role="cell">DevOps Engineer</span>
+        <span role="cell">Contract · 12mo</span><span role="cell">Day 3</span>
+        <span class="pill pill-interview" role="cell">Interviewing</span>
+      </div>
+      <div class="ledger-row" role="row">
+        <span class="mono" role="cell">KH–0114</span><span role="cell">Sr. Backend Engineer</span>
+        <span role="cell">Permanent</span><span role="cell">Day 2</span>
+        <span class="pill pill-sourcing" role="cell">Sourcing</span>
+      </div>
+      <div class="ledger-row" role="row">
+        <span class="mono" role="cell">KH–0116</span><span role="cell">Regional Sales Manager</span>
+        <span role="cell">Permanent</span><span role="cell">Day 1</span>
+        <span class="pill pill-sourcing" role="cell">Sourcing</span>
+      </div>
+      <div class="ledger-row" role="row">
+        <span class="mono" role="cell">KH–0117</span><span role="cell">VP Engineering</span>
+        <span role="cell">Executive search</span><span role="cell">Day 1</span>
+        <span class="pill pill-new" role="cell">New mandate</span>
       </div>
     </div>
-  </section>
+    <p class="ledger-foot">Your requirement could be the next row. <a href="#contact">Send it over →</a></p>
+  </div>
+</section>
 
-  <!-- ============ HOW WE WORK WITH YOU ============ -->
-  <section class="pricing" id="pricing">
-    <div class="wrap">
-      <p class="section-eyebrow">How we work with you</p>
-      <h2 class="section-title">No retainers. No upfront cost. Just results.</h2>
-
-      <div class="value-grid">
-        <div class="value-card">
-          <h3>Success-fee only</h3>
-          <p>You're invoiced only after a candidate successfully joins. There's no monthly retainer and no fee for a search that doesn't close.</p>
-        </div>
-        <div class="value-card">
-          <h3>Replacement guarantee</h3>
-          <p>Every placement carries a 45-day free replacement window, so you're covered if a hire doesn't work out early on.</p>
-        </div>
-        <div class="value-card">
-          <h3>Flexible engagement</h3>
-          <p>Permanent, contract, or executive search — we tailor the commercial terms to the mandate during onboarding, in writing, before we start sourcing.</p>
-        </div>
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how" id="how">
+  <div class="wrap">
+    <p class="section-eyebrow">The process</p>
+    <h2 class="section-title">From a job description to a joining date.</h2>
+    <div class="how-grid">
+      <div class="how-step">
+        <span class="how-index">1</span>
+        <h3>Tell us the role</h3>
+        <p>A short requirement form — skills, budget, timeline. Five minutes, no back-and-forth.</p>
       </div>
-
-      <div class="pricing-notes">
-        <p><span class="dot"></span> Payable only on successful joining — nothing upfront.</p>
-        <p><span class="dot"></span> 45-day free replacement on every placement.</p>
-        <p><span class="dot"></span> Full commercial terms shared in a simple agreement before any search begins.</p>
+      <div class="how-step">
+        <span class="how-index">2</span>
+        <h3>We source &amp; screen</h3>
+        <p>Manual screening against your brief — not a keyword match dumped from a job board.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ INDUSTRIES ============ -->
-  <section class="industries">
-    <div class="wrap">
-      <p class="section-eyebrow">Where we hire</p>
-      <h2 class="section-title">IT and Non-IT, across the board.</h2>
-      <div class="industry-tags">
-        <span>Software &amp; IT</span>
-        <span>Manufacturing</span>
-        <span>Pharma &amp; life sciences</span>
-        <span>Sales &amp; commercial</span>
-        <span>Finance &amp; accounts</span>
-        <span>HR &amp; people ops</span>
+      <div class="how-step">
+        <span class="how-index">3</span>
+        <h3>You interview</h3>
+        <p>We coordinate every round, chase feedback, and keep candidates warm between stages.</p>
+      </div>
+      <div class="how-step">
+        <span class="how-index">4</span>
+        <h3>They join, you pay</h3>
+        <p>One invoice, raised the day they join. 45-day guarantee runs from that date.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ============ CONTACT / CTA ============ -->
-  <section class="cta" id="contact">
-    <div class="wrap cta-inner">
-      <div class="cta-copy">
-        <p class="section-eyebrow light">Let's fill that seat</p>
-        <h2 class="section-title light">Send us the role. We'll send back people.</h2>
-        <p class="cta-sub">No retainer, no commitment beyond the role you share. If it's not a fit, you owe us nothing.</p>
+<!-- ===== HOW WE WORK ===== -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <p class="section-eyebrow">How we work with you</p>
+    <h2 class="section-title">No retainers. No upfront cost. Just results.</h2>
+    <div class="value-grid">
+      <div class="value-card">
+        <h3>Success-fee only</h3>
+        <p>You're invoiced only after a candidate successfully joins. No monthly retainer, no fee for a search that doesn't close.</p>
       </div>
-
-      <div class="cta-form" id="formWrapper">
-        <form id="leadForm">
-          <!-- Web3Forms access key -->
-          <input type="hidden" name="access_key" value="7f4cec33-beaf-44dc-a8d5-6a098b886bd9">
-          <!-- Redirect to same page after submission (handled by JS, this is a fallback) -->
-          <input type="hidden" name="subject" value="New hiring requirement via KairaHire.com">
-          <input type="hidden" name="from_name" value="KairaHire Website">
-          <!-- Honeypot spam protection -->
-          <input type="checkbox" name="botcheck" style="display:none;">
-
-          <div class="form-row">
-            <label for="name">Your name</label>
-            <input type="text" id="name" name="name" required placeholder="Anita Rao">
-          </div>
-          <div class="form-row">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company" required placeholder="Company name">
-          </div>
-          <div class="form-row">
-            <label for="email">Work email</label>
-            <input type="email" id="email" name="email" required placeholder="you@company.com">
-          </div>
-          <div class="form-row">
-            <label for="role">Role you're hiring for</label>
-            <input type="text" id="role" name="role" placeholder="e.g. Senior Java Developer">
-          </div>
-          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send requirement</button>
-          <p class="form-note" id="formNote">We reply within one business day.</p>
-        </form>
+      <div class="value-card">
+        <h3>Replacement guarantee</h3>
+        <p>Every placement carries a 45-day free replacement window, so you're covered if a hire doesn't work out early on.</p>
+      </div>
+      <div class="value-card">
+        <h3>Flexible engagement</h3>
+        <p>Permanent, contract, or executive search — we tailor the commercial terms to the mandate, in writing, before we start sourcing.</p>
       </div>
     </div>
-  </section>
+    <div class="pricing-notes">
+      <p><span class="dot"></span>Payable only on successful joining — nothing upfront.</p>
+      <p><span class="dot"></span>45-day free replacement on every placement.</p>
+      <p><span class="dot"></span>Full commercial terms shared in a simple agreement before any search begins.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDUSTRIES ===== -->
+<section class="industries">
+  <div class="wrap">
+    <p class="section-eyebrow">Where we hire</p>
+    <h2 class="section-title">IT and Non-IT, across the board.</h2>
+    <div class="industry-tags">
+      <span>Software &amp; IT</span>
+      <span>Manufacturing</span>
+      <span>Pharma &amp; life sciences</span>
+      <span>Sales &amp; commercial</span>
+      <span>Finance &amp; accounts</span>
+      <span>HR &amp; people ops</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="cta" id="contact">
+  <div class="wrap cta-inner">
+    <div class="cta-copy">
+      <p class="section-eyebrow light">Let's fill that seat</p>
+      <h2 class="section-title light">Send us the role. We'll send back people.</h2>
+      <p class="cta-sub">No retainer, no commitment beyond the role you share. If it's not a fit, you owe us nothing.</p>
+      <div class="cta-trust">
+        <div class="cta-trust-item"><span class="cta-trust-icon">✓</span>Success-fee only — pay when they join</div>
+        <div class="cta-trust-item"><span class="cta-trust-icon">✓</span>First shortlist in 48–72 hours</div>
+        <div class="cta-trust-item"><span class="cta-trust-icon">✓</span>45-day replacement guarantee</div>
+        <div class="cta-trust-item"><span class="cta-trust-icon">✓</span>We reply within one business day</div>
+      </div>
+    </div>
+
+    <div class="cta-form" id="formWrapper">
+      <form id="leadForm" novalidate>
+        <input type="hidden" name="access_key" value="7f4cec33-beaf-44dc-a8d5-6a098b886bd9">
+        <input type="hidden" name="subject" value="New hiring requirement via KairaHire.com">
+        <input type="hidden" name="from_name" value="KairaHire Website">
+        <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+
+        <div class="form-row">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required placeholder="Anita Rao" autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="company">Company</label>
+          <input type="text" id="company" name="company" required placeholder="Company name" autocomplete="organization">
+        </div>
+        <div class="form-row">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" required placeholder="you@company.com" autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone number <span style="font-weight:400;color:var(--ink-soft)">(optional)</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 98000 00000" autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <label for="service">Type of hire</label>
+          <select id="service" name="service">
+            <option value="" disabled selected>Select one</option>
+            <option value="Permanent Hiring">Permanent Hiring</option>
+            <option value="Contract Hiring">Contract Hiring</option>
+            <option value="Executive Search">Executive Search</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="role">Role you're hiring for</label>
+          <input type="text" id="role" name="role" placeholder="e.g. Senior Java Developer">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send requirement</button>
+        <p class="form-note" id="formNote">We reply within one business day.</p>
+      </form>
+    </div>
+  </div>
+</section>
 
 </main>
 
+<!-- ===== FOOTER ===== -->
 <footer class="site-footer">
-  <div class="wrap footer-inner">
-    <div class="footer-brand">
-      <span class="brand-mark small">K</span>
-      <span>KairaHire</span>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col footer-col-brand">
+        <div class="footer-brand">
+          <span class="brand-mark small" aria-hidden="true">K</span>
+          <span>KairaHire</span>
+        </div>
+        <p>Connecting great companies with great talent. Based in Bengaluru, Karnataka, India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Permanent Hiring</a>
+        <a href="#services">Contract Hiring</a>
+        <a href="#services">Executive Search</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:narasimha.d@kairahire.com">narasimha.d@kairahire.com</a>
+        <a href="#contact">Share a requirement</a>
+        <a href="https://www.linkedin.com/company/kairahire" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
-    <p class="footer-tag">Connecting great companies with great talent.</p>
-    <div class="footer-links">
-      <a href="mailto:narasimha.d@kairahire.com">narasimha.d@kairahire.com</a>
-      <span class="footer-divider">·</span>
-      <span>Bengaluru, Karnataka, India</span>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 KairaHire Solutions. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
     </div>
-    <p class="footer-copy">© 2026 KairaHire Solutions. All rights reserved.</p>
   </div>
 </footer>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+
+  // ===== Mobile nav =====
+  const navToggle = document.getElementById('navToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  navToggle.addEventListener('click', function () {
+    const open = mobileNav.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('.mobile-nav-link, .mobile-nav .btn').forEach(function(link) {
+    link.addEventListener('click', function () {
+      mobileNav.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', false);
+    });
+  });
 
   // ===== Web3Forms contact form =====
   const form = document.getElementById('leadForm');
@@ -698,8 +779,6 @@ document.addEventListener('DOMContentLoaded', function () {
   if (form) {
     form.addEventListener('submit', async function (e) {
       e.preventDefault();
-
-      // Basic validation
       const name = document.getElementById('name').value.trim();
       const company = document.getElementById('company').value.trim();
       const email = document.getElementById('email').value.trim();
@@ -710,7 +789,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      // Loading state
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending…';
       note.textContent = '';
@@ -721,27 +799,22 @@ document.addEventListener('DOMContentLoaded', function () {
           method: 'POST',
           body: formData
         });
-
         const data = await response.json();
 
         if (data.success) {
-          // Show success state
           formWrapper.innerHTML = `
             <div class="form-success">
               <div class="form-success-icon">✓</div>
               <h3>Requirement received.</h3>
               <p>Thanks, ${name}. We've got your details and will be in touch within one business day.</p>
-            </div>
-          `;
+            </div>`;
         } else {
-          // API returned an error
           submitBtn.disabled = false;
           submitBtn.textContent = 'Send requirement';
-          note.textContent = 'Something went wrong. Please email us directly at narasimha.d@kairahire.com';
+          note.textContent = 'Something went wrong. Please email narasimha.d@kairahire.com directly.';
           note.style.color = '#bd6535';
         }
       } catch (err) {
-        // Network error
         submitBtn.disabled = false;
         submitBtn.textContent = 'Send requirement';
         note.textContent = 'Could not send — please email narasimha.d@kairahire.com directly.';
@@ -750,34 +823,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ===== Sticky header shadow on scroll =====
+  // ===== Sticky header shadow =====
   const header = document.querySelector('.site-header');
   if (header) {
     window.addEventListener('scroll', function () {
-      header.style.boxShadow = window.scrollY > 12 ? '0 1px 0 rgba(0,0,0,0.04)' : 'none';
+      header.style.boxShadow = window.scrollY > 12 ? '0 2px 12px rgba(0,0,0,0.06)' : 'none';
     }, { passive: true });
   }
 
-  // ===== Reveal-on-scroll =====
-  const revealTargets = document.querySelectorAll('.ledger-row, .problem-card, .how-step, .service-row');
+  // ===== Reveal on scroll =====
+  const revealTargets = document.querySelectorAll('.ledger-row, .problem-card, .how-step, .service-row, .value-card');
   if ('IntersectionObserver' in window && revealTargets.length) {
     revealTargets.forEach(function (el) { el.classList.add('reveal'); });
-
     const io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry, i) {
         if (entry.isIntersecting) {
-          const el = entry.target;
-          setTimeout(function () { el.classList.add('reveal-in'); }, i * 40);
-          io.unobserve(el);
+          setTimeout(function () { entry.target.classList.add('reveal-in'); }, i * 50);
+          io.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
-
     revealTargets.forEach(function (el) { io.observe(el); });
-
     setTimeout(function () {
       revealTargets.forEach(function (el) { el.classList.add('reveal-in'); });
-    }, 1500);
+    }, 2000);
   }
 
 });
